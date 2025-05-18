@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shayari</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="shayari-page">
+  <div class="container">
+    <p id="typing" class="shayari"></p>
+    <button onclick="location.href='index.html'">Go Back</button>
+  </div>
+
+  <script>
+    const text = `"Teri har ek baat mein kuch baat hai,
+Tere bina zindagi adhoori si raahat hai,
+Tu jo saath ho mere, to har dard hai mita,
+Bas yun hi rehna mere kareeb, meri chahat hai."`;
+
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 35); // Typing speed
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>

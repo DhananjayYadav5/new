@@ -1,0 +1,90 @@
+/* Common */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .container {
+    padding: 20px;
+    max-width: 700px;
+  }
+  
+  /* Page 1 - Pink */
+  .welcome-page {
+    background: linear-gradient(to right, #ffafcc, #ffc8dd);
+    color: #4a0033;
+  }
+  
+  .welcome-page h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px #fff;
+  }
+  
+  .welcome-page button {
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff69b4;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .welcome-page button:hover {
+    background-color: #ff85c1;
+    transform: scale(1.05);
+  }
+  
+  /* Page 2 - Black */
+  .shayari-page {
+    background-color: #000;
+    color: white;
+  }
+  
+  /* Typing effect with shiny gradient text */
+  .shayari {
+    font-size: 1.8em;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #ffffff, #cccccc, #ffffff);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite;
+    white-space: pre-wrap;
+  }
+  
+  /* Glowing shine animation */
+  @keyframes shine {
+    0% { background-position: -300% 0; }
+    100% { background-position: 300% 0; }
+  }
+  
+  /* Button Style for Shayari Page */
+  .shayari-page button {
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .shayari-page button:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 0 25px rgba(255,255,255,0.7);
+  }
+  
